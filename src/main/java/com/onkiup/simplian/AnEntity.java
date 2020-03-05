@@ -2,10 +2,10 @@ package com.onkiup.simplian;
 
 import java.util.UUID;
 
-public interface Entity {
+public interface AnEntity {
     UUID id();
     void id(UUID id);
-    default <T extends Entity> T as(Class<T> target) {
+    default <T extends AnEntity> T as(Class<T> target) {
 
     }
 }

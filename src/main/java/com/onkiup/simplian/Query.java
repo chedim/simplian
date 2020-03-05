@@ -2,18 +2,18 @@ package com.onkiup.simplian;
 
 import java.util.UUID;
 
-public class Query<T extends Entity> {
+public class Query<T extends AnEntity> {
     private Class<T> target;
     private UUID queryId;
     protected Query(Class<T> target) {
         this.target = target;
     }
 
-    public static final <T extends Entity> Query<T> on(Class<T> target) {
+    public static final <T extends AnEntity> Query<T> on(Class<T> target) {
         return new Query<>(target);
     }
 
-    public static final <T extends Entity> Query<T> byId(Class<T> target, UUID id) {
+    public static final <T extends AnEntity> Query<T> byId(Class<T> target, UUID id) {
         return new Query<>(target).id(id);
     }
 

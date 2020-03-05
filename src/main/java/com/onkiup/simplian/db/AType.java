@@ -1,5 +1,5 @@
 package com.onkiup.simplian.db;
 
-public interface Type extends SqlConvertable {
+public interface AType extends StorageStructure {
     Class asJava();
 }

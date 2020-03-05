@@ -1,8 +1,8 @@
 package com.onkiup.simplian.db.mysql;
 
-import com.onkiup.simplian.db.Type;
+import com.onkiup.simplian.db.AType;
 
-public enum MySQLType implements Type {
+public enum MySQLType implements AType {
     ;
 
     private Class javaClass;

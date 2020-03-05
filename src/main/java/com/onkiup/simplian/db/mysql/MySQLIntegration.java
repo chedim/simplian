@@ -1,12 +1,11 @@
 package com.onkiup.simplian.db.mysql;
 
-import com.onkiup.simplian.Entity;
-import com.onkiup.simplian.db.DatabaseIntegration;
-import com.onkiup.simplian.db.EntityTable;
+import com.onkiup.simplian.AnEntity;
+import com.onkiup.simplian.db.AStorage;
 
 import java.sql.Connection;
 
-public class MySQLIntegration implements DatabaseIntegration {
+public class MySQLIntegration implements AStorage {
     private Connection connection;
 
     public MySQLIntegration(Connection connection) {
@@ -19,7 +18,7 @@ public class MySQLIntegration implements DatabaseIntegration {
     }
 
     @Override
-    public EntityTable readTable(Class<? extends Entity> target) {
+    public EntityTable readTable(Class<? extends AnEntity> target) {
         return null;
     }
 }

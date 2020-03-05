@@ -1,13 +1,13 @@
 package com.onkiup.simplian.db.mysql;
 
+import com.onkiup.simplian.db.AnEntityField;
+
 import java.lang.reflect.Field;
 
-public class MySQLField implements com.onkiup.simplian.db.EntityField {
+public class MySQLField implements AnEntityField {
 
     private Field javaField;
     private MySQLType type;
-
-    public
 
     @Override
     public String asSQL() {
